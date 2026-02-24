@@ -24,7 +24,10 @@ def audit_log(action, pid):
  """
 def data_minimize(payload):
     allowed = {k: payload[k] for k in ['id','name','dob','consent'] if k in payload}
+<<<<<<< HEAD
     #allowed = {k: payloads[k] for k in ['id','name','dob','consent'] if k in payload}
+=======
+>>>>>>> a0036b4867e917ca07ce2b1c346e6c23f8d75649
     return allowed
 
 def enforce_consent(payload):
